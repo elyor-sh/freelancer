@@ -1,0 +1,628 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url(../fonts/Montserrat-Thin.ttf);
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tqqn6x");
+  src: url("../fonts/icomoon.eot?tqqn6x#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tqqn6x") format("truetype"), url("../fonts/icomoon.woff?tqqn6x") format("woff"), url("../fonts/icomoon.svg?tqqn6x#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook-f:before {
+  content: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.title {
+  color: #465065;
+  font-size: 2.125rem;
+  line-height: 43.2px;
+  font-family: "Montserrat-SemiBold", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.text {
+  color: #9aa0ab;
+  font-size: 1.125rem;
+  line-height: 22.08px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header__logo {
+  padding-top: 45px;
+  background: #f0454c;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: flex-end;
+}
+.header__logo a {
+  color: #ffffff;
+  font-size: 1.4175rem;
+  line-height: 36px;
+  font-family: "Montserrat-Medium", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0px 18px;
+}
+
+.header__menu li {
+  padding-right: 43px;
+}
+.header__menu li:last-child {
+  padding-right: 0;
+}
+.header__menu a {
+  color: #465065;
+  font-size: 1.0625rem;
+  line-height: 84.96px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.header__menu a:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #465065;
+}
+
+.header__content {
+  max-width: 725px;
+  width: 100%;
+  padding-top: 340px;
+}
+
+.header__title {
+  font-size: 1.9375rem;
+  line-height: 48px;
+  letter-spacing: -1.4px;
+  text-transform: uppercase;
+}
+
+.header__text {
+  margin: 30px 0px;
+  color: #465065;
+  font-size: 1.25rem;
+  line-height: 39.84px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.header__btn a {
+  color: #ffffff;
+  font-size: 1.3125rem;
+  line-height: 67.92px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  background: #f0454c;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 7px;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.services__content {
+  padding: 65px 0px;
+}
+
+.services__block {
+  padding-right: 30px;
+  flex: 1 1 33%;
+}
+
+.services__block-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.dots {
+  color: #f0454c;
+}
+
+.services__block-text {
+  padding: 30px 0px;
+}
+
+.subtext {
+  display: none;
+}
+
+.subtext._more {
+  display: block;
+}
+
+.more-link {
+  color: #f0454c;
+  font-size: 0.875rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Bold", serif;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.link-arrow {
+  position: relative;
+  padding-left: 20px;
+  pointer-events: none;
+}
+.link-arrow::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #f0454c;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.portfolio {
+  padding-bottom: 80px;
+}
+
+.portfolio__block-img {
+  flex: 1 1 50%;
+}
+
+.portfolio__block-text {
+  flex: 1 1 50%;
+  padding-right: 100px;
+}
+
+.portfolio__subtitle {
+  color: #465065;
+  font-size: 1.0625rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 14px 0px;
+}
+
+.portfolio__text p:nth-child(2) {
+  padding: 28px 0px 15px;
+}
+
+.services__block-link {
+  margin-top: 25px;
+}
+
+.team__title h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.team__text {
+  font-size: 1rem;
+  padding: 10px 0px 25px;
+}
+
+.member {
+  flex: 1 1 33.33%;
+  align-items: center;
+}
+.member:nth-child(1) {
+  margin-right: 20px;
+}
+.member:nth-child(2) {
+  margin-right: 20px;
+}
+
+.about__member {
+  margin-left: 20px;
+}
+
+.member__name {
+  color: #465065;
+  font-size: 1.375rem;
+  line-height: 48px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.prof__member {
+  color: #f0454c;
+  font-size: 0.875rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Medium", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 20px 0px;
+}
+
+.hobby__member {
+  color: #9aa0ab;
+  font-size: 0.875rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.team__link {
+  text-align: right;
+  margin: 20px 0px 20px 0px;
+}
+
+.team__more-link {
+  color: #f0454c;
+  font-size: 0.875rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Bold", serif;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.footer__line {
+  width: 100%;
+  height: 2px;
+  background: #000005;
+}
+
+.footer__content {
+  padding: 20px 0px 60px;
+}
+
+.icon {
+  color: #9aa0ab;
+  font-size: 1.5rem;
+  line-height: 19.92px;
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-right: 11.5px;
+}
+
+@media (max-width: 1300px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1100px) {
+  .header__content {
+    max-width: 455px;
+  }
+
+  .header__title {
+    font-size: 1.25rem;
+    line-height: 31.92px;
+  }
+
+  .header__text {
+    margin: 15px 0px;
+    line-height: 24px;
+  }
+
+  .services__block-title {
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+
+  .prof__member {
+    padding: 10px 0px;
+  }
+
+  .member__name {
+    font-size: 1.1rem;
+    line-height: 24px;
+  }
+  .member__name:nth-child(1) {
+    margin-right: 10px;
+  }
+  .member__name:nth-child(2) {
+    margin-right: 10px;
+  }
+
+  .hobby__member {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio__block-text {
+    padding-right: 50px;
+  }
+
+  .member {
+    text-align: center;
+    display: block;
+  }
+
+  .team__members {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    background: none;
+    padding-top: 0;
+  }
+
+  .menu__icon {
+    display: block;
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .menu__icon span,
+.menu__icon::before,
+.menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+
+  .menu__icon::before,
+.menu__icon::after {
+    content: "";
+  }
+
+  .menu__icon::before {
+    top: 0;
+  }
+
+  .menu__icon::after {
+    bottom: 0;
+  }
+
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu__list {
+    display: block;
+  }
+  .menu__list a {
+    padding: 20px 0px;
+    color: #fff;
+  }
+
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    left: -100%;
+    z-index: 0;
+  }
+
+  .menu__body._active {
+    left: 0;
+    overflow: auto;
+  }
+
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  .header__nav {
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+
+  .header__nav::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #f0454c;
+    z-index: 3;
+    left: 0;
+    top: 0;
+  }
+
+  .services__content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .services__block {
+    padding-right: 0px;
+    padding-top: 25px;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .portfolio__row {
+    flex-direction: column;
+  }
+
+  .portfolio__block-img img {
+    width: 100%;
+  }
+
+  .portfolio__block-text {
+    padding-right: 0px;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .team__title,
+.team__text {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__copy {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .header__text {
+    margin: 15px 0px;
+    line-height: 15.84px;
+  }
+
+  .header__title h1 {
+    font-size: 1.5rem;
+  }
+
+  .team__members {
+    display: block;
+  }
+
+  .member {
+    display: flex;
+    margin: 15px auto;
+  }
+
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__icons {
+    justify-content: center;
+    padding: 20px 0px;
+  }
+}
